@@ -39,9 +39,47 @@
             transform: translateY(-2px);
             box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
         }
-    </style>
+  </style>
+    <!-- Load Lucide icons for professional visuals -->
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body class="bg-gray-50 font-sans">
+
+    <!-- Navbar (Copied from index.html) -->
+    <nav class="sticky top-0 z-50 bg-white shadow-lg backdrop-blur-sm bg-opacity-95">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo/Brand -->
+                <!-- Links back to the main website's home page -->
+                <a href="index.html#home" class="flex items-center space-x-2 text-2xl font-bold text-primary-dark logo-link">
+                    <span class="text-accent-orange" data-lucide="trending-up"></span>
+                    <span>InflexionPointe</span>
+                </a>
+
+                <!-- Main Site Navigation Links -->
+                <div class="hidden md:flex space-x-8">
+                    <!-- Note: Links point to the main site (index.html) with anchors -->
+                    <a href="index.html#services" class="text-primary-dark hover:text-primary-blue transition duration-200 font-medium">Services</a>
+                    <a href="index.html#methodology" class="text-primary-dark hover:text-primary-blue transition duration-200 font-medium">Methodology</a>
+                    <a href="index.html#contact" class="px-4 py-2 bg-primary-blue text-white rounded-lg shadow-md hover:bg-blue-600 transition duration-200 font-medium">
+                        Start an Audit
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button (Hamburger) - Not necessary for this minimal page, but included for consistency/future use -->
+                <button id="mobile-menu-button" class="md:hidden text-primary-dark hover:text-primary-blue focus:outline-none">
+                    <span data-lucide="menu"></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown - Points to the main site -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-inner pb-4">
+            <a href="index.html#services" class="block px-4 py-2 text-primary-dark hover:bg-gray-100 transition duration-200">Services</a>
+            <a href="index.html#methodology" class="block px-4 py-2 text-primary-dark hover:bg-gray-100 transition duration-200">Methodology</a>
+            <a href="index.html#contact" class="block px-4 py-2 text-white bg-primary-blue m-4 rounded-lg text-center">Start an Audit</a>
+        </div>
+    </nav>
 
     <div class="min-h-screen flex items-center justify-center p-4">
         <div class="max-w-xl w-full bg-white rounded-xl shadow-2xl p-8 sm:p-10 text-center border-t-8 border-primary-blue">
